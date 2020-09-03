@@ -4,6 +4,17 @@
   connection: local
   gather_facts: False
 
+  vars:
+    ec2_image: ''
+    ec2_instance_count: ''
+    ec2_instance_type: ''
+    ec2_keypair: ''
+    ec2_region: ''
+    ec2_security_group: ''
+    ec2_tag_name_prefix: ''
+    tower_user_name: ''
+    vpc_subnet_id: ''
+
 
   tasks:
   - name: Launch {{ec2_instance_count}} AWS instances for Windows Server
